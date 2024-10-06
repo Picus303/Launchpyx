@@ -73,6 +73,8 @@ With this, the button at the bottom left of your Launchpad should light up in re
 - You can temporarily change the color of any button using `self.launchpad.set_led_color(row, col, color)` (normally, this should only be used inside a blocking action).
 - You can dynamically register new actions at runtime using `self.manager.register_action(function, [row, col], color, blocking)`.
 - You can also dynamically remove an action using `self.manager.revoke_action([row, col])`.
+- While a blocking action is running, it can listen to the events (pressed buttons) with `self.message_queue.get()`.
+- A blocking action can also run indefinitely and listen to `self.stop_event.is_set()``to know when to stop. This event is triggered when three buttons are pressed at the same time.
 
 ### Advanced Usage
 
