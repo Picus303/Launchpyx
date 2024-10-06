@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=72.1.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Launchpyx"
+version = "0.1.0"
+description = "Turn your Launchpad X into a customizable macro pad."
+authors = [
+    {name = "Picus303", email = "pilleurc@protonmail.com"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "python-rtmidi>=1.5.8"
+]
+
+[project.urls]
+Homepage = "https://github.com/Picus303/Launchpyx"

@@ -6,7 +6,7 @@ import importlib.util
 from queue import Queue
 from rtmidi.midiconstants import NOTE_ON
 
-from launchpad_control import LaunchpadController
+from Launchpyx.launchpad_control import LaunchpadController
 
 
 class Macro:
