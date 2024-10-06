@@ -48,24 +48,6 @@ class OpenLink(Macro):
     }
   ]
 }
-{
-  "macros": [
-    {
-      "name": "OpenLink",
-      "args": {
-        "url": "https://example.com"
-      },
-      "actions": [
-        {
-          "name": "run",
-          "position": [0, 0],
-          "color": 5,
-          "blocking": false
-        }
-      ]
-    }
-  ]
-}
 ```
 
 Finally, you can run the program to assign the macro:
