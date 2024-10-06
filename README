@@ -19,7 +19,7 @@ To set up Launchpyx, you need two files:
 Here’s a basic example of how to use Launchpyx to assign a macro to a button on your Launchpad X. In this example, we create a macro that opens a link when you press a button:
 
 **macros.py**
-```python`
+```python
 import webbrowser
 from launchpyx import Macro
 
