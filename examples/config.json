@@ -1,0 +1,90 @@
+{
+    "macros": [
+        {
+            "name": "OpenLink",
+            "args": {
+                "url": "https://chatgpt.com/"
+            },
+            "actions": [
+                {
+                    "name": "run",
+                    "position": [0, 0],
+                    "color": 5,
+                    "blocking": false
+                }
+            ]
+        },
+        {
+            "name": "RandomColor",
+            "args": {
+                "speed": 500
+            },
+            "actions": [
+                {
+                    "name": "run",
+                    "position": [1, 0],
+                    "color": 21,
+                    "blocking": true
+                }
+            ]
+        },
+        {
+            "name": "Paint",
+            "args": {
+                "color": 5
+            },
+            "actions": [
+                {
+                    "name": "run",
+                    "position": [2, 0],
+                    "color": 13,
+                    "blocking": true
+                }
+            ]
+        },
+        {
+            "name": "AudioVisualizer",
+            "args": {},
+            "actions": [
+                {
+                    "name": "run",
+                    "position": [3, 0],
+                    "color": 45,
+                    "blocking": true
+                }
+            ]
+        },
+        {
+            "name": "OBSController",
+            "args": {
+                "host": "localhost",
+                "port": 4455,
+                "password": "9zlda3ByIIQZT7Sg",
+                "scene1": "Scene 1",
+                "scene2": "Scene 2",
+                "connected_color": 57,
+                "disconnected_color": 49
+            },
+            "actions": [
+                {
+                    "name": "run_connect",
+                    "position": [4, 0],
+                    "color": 49,
+                    "blocking": false
+                },
+                {
+                    "name": "run_scene1",
+                    "position": [4, 1],
+                    "color": 20,
+                    "blocking": false
+                },
+                {
+                    "name": "run_scene2",
+                    "position": [4, 2],
+                    "color": 30,
+                    "blocking": false
+                }
+            ]
+        }
+    ]
+}
